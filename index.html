@@ -4,65 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css">    
 </head>
 <body>
-    <header>
-        <div>
-            <h1>CV (Curriculum vitae)</h1>
-        </div>
-    </header>
     <main>
-        <h2>Umumiy ma'lumotlar</h2>
-        <div class="flex">
-            <p class="type">Ismi sharifi:</p>
-            <p class="lastName">Falonchi</p>
-            <p class="firstName">pistonchiev</p>
-        </div>
-        <div class="flex">
-            <p class="type">Tavvallud topgan sana va joyi:</p>
-            <p class="bothdata">12.08.1983</p>
-            <p class="bothloc">Toshkent shahri</p>
-        </div>
-        <div class="flex">
-            <p class="type">Yashash manzili:</p>
-            <p class="location">Toshkent shahar, falon tuman, tugun ko'cha 312 uy</p>
-        </div>
-        <div class="flex">
-            <p class="type">Elektron pochta manzili:</p>
-            <p class="email">birnarsa@birnarsa.com</p>
-        </div>
-        <div class="flex">
-            <p class="type">Telefon raqami:</p>
-            <p class="phone">+998999999999</p>
-        </div>
-        <h2>Ma'lumoti</h2>
-        <div class="flex">
-            <p class="type">Tamomlagan o'quv muassasa nomi va yo'nalishi:</p>
-            <p class="diplom">sfjdsfjdsfkjds unversiteti dsfjgnkj yo'nalishi</p>
-        </div>
-        <h2>Mehnat faoliyati</h2>
-        <div class="flex">
-            <p class="type">Ishlagan tashkilot nomi:</p>
-            <p class="company">Bekorchilar companiuyasi</p>
-        </div>
-        <div class="flex">
-            <p class="type">Ishlagan lavozimi:<p>
-            <p class="position">Bosh bekorchi</p>
-        </div>
-        <div class="flex">
-            <p class="type">Ishlagan davri:<p>
-            <p class="period">01.01.2004-07.11.2022</p>
-        </div>
-        <h2>Qo'shimcha ma'lumotlar</h2>
-        <div class="flex">
-            <p class="type">Hohlayotgan ish turi:</p>
-            <p class="qushimch">Ishlatmasdan oylik to'laydigan kompaniyada bosh bekorchi lavozimida</p>
-        </div>
+        <section class="information flex container">
+            <div class="flex">
+                <div class="flex">
+                    <h2 class="information__firstName">First name</h2>
+                    <h2 class="information__lastName">Last name</h2>
+                </div>
+                <div class="flex">
+                    <ul class="flex">
+                        <li class="information_list flex">
+                            <h3>COUNTRY:</h3>
+                            <p class="information__list__country">COUNTRY</p>
+                        </li>
+                        <li class="information_list flex">
+                            <h3>NATIONALITY:</h3>
+                            <p class="information__list__nationality">NATIONALITY</p>
+                        </li>
+                        <li class="information__list flex">
+                            <h3>DATE OF BIRTH:</h3>
+                            <p class="information__list__dateOfBirth">DATE OF BIRTH</p>
+                        </li>
+                    </ul>
+                    <ul class="flex">
+                        <li class="information_list flex">
+                            <h3>GENDER:</h3>
+                            <p class="information__list__gender">GENDER</p>
+                        </li>
+                        <li class="information_list flex">
+                            <h3>MARITAL STATUS:</h3>
+                            <p class="information__list__maritalStatus">MARITAL STATUS</p>
+                        </li>
+                        <li class="information__list flex">
+                            <h3>DRIVING LICENSE:</h3>
+                            <p class="information__list__drivingLicense">DRIVING LICENSE</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information__myPhoto">
+                <img src="./img/default-avatar-photo-placeholder-profile-picture-vector-21806614.jpg" alt="myPhoto">
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="flex container">
+                <h3>CONTACTS</h3>
+                <ul class="flex">
+                    <li class="contacts__tel flex">
+                        <h3>Mobile:</h3>
+                        <p class="contacts__tel__number">telNumber</p>
+                    </li>
+                    <li class="contacts__email flex">
+                        <h3>E-mail:</h3>
+                        <p class="contacts__email__dddress">e-mail</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="educationalBg">
+            <div class="flex container">
+                <h3>EDUCATIONAL BACKGROUND</h3>
+                <ul class="flex">
+                    <li class="educationalBg__edu flex">
+                        <h3>Education:</h3>
+                        <p class="educationalBg__edu__otm">OTM</p>
+                    </li>
+                    <li class="educationalBg__edu flex">
+                        <h3>Years:</h3>
+                        <p class="educationalBg__edu__years">YEARS</p>                        
+                    </li>
+                    <li class="educationalBg__edu flex">
+                        <h3>Special:</h3>
+                        <p class="educationalBg__edu__special">SPECIAL</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="workBg">
+            <div class="flex container">
+                <h3>WORK EXPERIENCE</h3>
+                <ul class="flex">
+                    <li class="workBg__work flex">
+                        <h3>Company:</h3>
+                        <p class="workBg__work__company">COMPANY</p>
+                    </li>
+                    <li class="workBg__work flex">
+                        <h3>Years:</h3>
+                        <p class="workBg__work__years">YEARS</p>                        
+                    </li>
+                    <li class="workBg__work flex">
+                        <h3>Job title:</h3>
+                        <p class="workBg__work__jobTitle">JOB TITLE</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer></footer>
-
+    
+    
+    
     <script src="./index.js"></script>
 </body>
 </html>
