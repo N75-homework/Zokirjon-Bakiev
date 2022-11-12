@@ -4,31 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color flippeer || Simple</title>
-    <link rel="stylesheet" href="./styles.css">    
+    <title>Converter</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-   <nav>
-    <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-            <li>
-                <a href="./index.html">simple</a>
-            </li>
-            <li>
-                <a href="./hex.html">hex</a>
-            </li>
-        </ul>
-    </div>
-   </nav>
-   <main>
-    <div class="container">
-        <h2>Background color : <span class="color">
-            #f1f5f8 </span></h2>
+    <section class="converter flex container">
+        <div class="converter__box flex">
+            <div class="converter__box__title flex">
+                <h2>Kim birinchi bo-rish-ga!</h2>
+                <form id="form">
+                    <label for="hisoblash">Masofa</label>
+                    <input id="input__text" name="hisoblash" type="number" placeholder="KM" required>
+                    <button id="btn" type="submit">Hisoblash</button>
+                </form>
+            </div>        
+            <ul class="converter__box__main flex">
+                <li class="flex">
+                    <img src="./icons/people.png" alt="">
+                    <p>Piyoda</p>
+                    <p id="piyoda"></p>
+                </li>
+                <li class="flex">
+                    <img src="./icons/bycicle.png" alt="">
+                    <p>Velosiped</p>
+                    <p id="Velosiped"></p>
+                </li>
+                <li class="flex">
+                    <img src="./icons/car.png" alt="">
+                    <p>Mashina</p>
+                    <p id="Mashina"></p>
+                </li>
+                <li class="flex">
+                    <img src="./icons/airplane.png" style="transform: scaleX(-100%);" alt="">
+                    <p>Samalyot</p>
+                    <p id="Samalyot"></p>
+                </li>
+            </ul>
         </div>
-        <button class="btn btn-hero" id="btn">click me</button>
-   </main>      
+    </section>
     
-    <script src="./app.js"></script>
+    
+    
+    
+    <script src="./index.js"></script>
 </body>
 </html>
