@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converter</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <section class="converter flex container">
-        <div class="converter__box flex">
-            <div class="converter__box__title flex">
-                <h2>Kim birinchi bo-rish-ga!</h2>
-                <form id="form">
-                    <label for="hisoblash">Masofa</label>
-                    <input id="input__text" name="hisoblash" type="number" placeholder="KM" required>
-                    <button id="btn" type="submit">Hisoblash</button>
-                </form>
-            </div>        
-            <ul class="converter__box__main flex">
-                <li class="flex">
-                    <img src="./icons/people.png" alt="">
-                    <p>Piyoda</p>
-                    <p id="piyoda"></p>
-                </li>
-                <li class="flex">
-                    <img src="./icons/bycicle.png" alt="">
-                    <p>Velosiped</p>
-                    <p id="Velosiped"></p>
-                </li>
-                <li class="flex">
-                    <img src="./icons/car.png" alt="">
-                    <p>Mashina</p>
-                    <p id="Mashina"></p>
-                </li>
-                <li class="flex">
-                    <img src="./icons/airplane.png" style="transform: scaleX(-100%);" alt="">
-                    <p>Samalyot</p>
-                    <p id="Samalyot"></p>
-                </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <!-- title -->
+        <div class="title">
+          <h2>our reviews</h2>
+          <div class="underline"></div>
         </div>
-    </section>
-    
-    
-    
-    
-    <script src="./index.js"></script>
-</body>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img src="person-1.jpeg" id="person-img" alt="" />
+          </div>
+          <h4 id="author">sara jones</h4>
+          <p id="job">ux designer</p>
+          <p id="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+            Iste, doloremque nihil?
+          </p>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn">surprise me</button>
+        </article>
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
 </html>
