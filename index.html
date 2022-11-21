@@ -8,21 +8,17 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container">
-        <div class="container__box">
-            <h2>Client Login</h2>
-            <form id="form">
-                <label for="username">Username:</label>
-                <input id="username" name="username" type="text" placeholder="username">
-                <br>
-                <label for="password">Password:</label>
-                <input id="inputPassword" name="password" type="password" placeholder="password">
-                <br>
-                <button id="btn" type="submit">Login</button>
-            </form>
-            <img id="toggleEye" src="./icons/eye.svg" alt="eye">
-        </div>
+    
+
+    <form id="inputForm">
+        <input id="inputTel" name="tel" type="tel" placeholder="+998_________" pattern="[+][9][9][8][0-9]{9}" maxlength="13" required>
+        <button id="inputBtn" type="submit">Send</button>
+    </form>
+
+    <div>
+      <p id="aaa">telNumber:</p>
     </div>
+    
     
     <script src="./index.js"></script>
 </body>
