@@ -1,0 +1,26 @@
+body {
+    background: rgb(197, 193, 193);
+    text-align: center;
+}
+
+.container {
+    &__box {
+        background: #fff;
+        max-width: 300px;
+        margin: 0 auto;
+
+        & form input {
+            padding: 5px;
+            margin-bottom: 5px;
+            outline: none;
+            border-radius: 30px;
+        }
+    }
+}
+
+#toggleEye {
+    transform: translate(105px, -50px);
+    visibility: visible;
+    height: 20px;
+    cursor: pointer;
+}
