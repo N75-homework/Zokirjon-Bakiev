@@ -1,16 +1,27 @@
+let a = prompt().toLowerCase()
+let b = prompt().toLowerCase()
+let c = prompt().toLowerCase()
+let d = prompt().toLowerCase()
+let e = prompt().toLowerCase()
+let f = prompt().toLowerCase()
+let g = prompt().toLowerCase()
 
-let $inputForm = document.querySelector('#inputForm');
-let $inputTel = document.querySelector('#inputTel');
-let $inputBtn = document.querySelector("#inputBtn");
-let guitars = document.querySelector('aaa')
-;
 
-$inputForm.addEventListener('submit', function(evt) {
-    evt.preventDefault()
-    let $dateInfo = $inputTel.value.split('')
-    let arr =  $dateInfo.slice(0,9)
-    let str = arr.join('')
-    let result2 = str.padEnd(13, '#')
-    console.log('telNumber: ' + result2);
-    document.getElementById("aaa").innerHTML = 'telNumber: ' + result2;
-})
+let array = [a, b, c, d,  e, f, g]
+let arrNumber = []
+let arrWord = []
+
+for (let i = 0; i < array.length; i++) {
+    let element = array[i];
+    if ( isNaN(element)) {
+        arrWord.push(element)
+    }
+    else {
+        arrNumber.push(element)
+    }
+}
+
+let arrNumberSort = arrNumber.sort((a, b) => a - b);
+let arrWordSort = arrWord.sort();
+console.log(arrNumberSort);
+console.log(arrWordSort);
