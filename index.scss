@@ -1,0 +1,40 @@
+main {
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 20px;
+}
+footer {
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 20px;
+}
+.flex {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+h4{ margin: 0;
+}
+
+#size25,#size30,#size35 {
+    cursor: pointer;
+}
+#size25:hover,
+#size30:hover,
+#size35:hover {
+    background: rgb(190, 177, 138);
+    border-color: rgb(190, 177, 138);
+}
+.size {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
